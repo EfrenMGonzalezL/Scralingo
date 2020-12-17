@@ -1,0 +1,211 @@
+/***********************************************
+*       Estilos para layout de estudiante      *
+************************************************/
+
+/***********************************************
+*               Variables globales             *
+************************************************/
+
+body {
+  display: -webkit-box;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidemenu-wrap {
+  -webkit-filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+          filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+.sidemenu {
+  position: relative;
+  shape-outside: ellipse(250px 100% at 0 -20px);
+  -webkit-clip-path: ellipse(250px 80% at -3px 214px);
+          clip-path: ellipse(250px 80% at -3px 214px);
+  left: 0;
+  top: 0;
+  background: #ff3366;
+  width: 250px;
+  height: 100%;
+  box-shadow: 0px 0px 10px 5px #333;
+}
+
+.sidemenu .user-info {
+  position: relative;
+  width: 100%;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(4, 1fr);
+  -webkit-box-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.sidemenu .user-info .user-profile-img {
+  border-radius: 50%;
+  width: 75%;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.sidemenu .user-info .user-name {
+  grid-row: 1/2;
+}
+
+.sidemenu .user-info .user-level {
+  grid-row: 2/3;
+}
+
+.sidemenu .user-info .user-money {
+  grid-column: 1/3;
+}
+
+.sidemenu .user-info .user-xp {
+  grid-column: 1/3;
+}
+
+.sidemenu .links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidemenu .links .link-item {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidemenu .links .link-item:hover {
+  background: white;
+}
+
+.sidemenu .links .link-item:hover a {
+  color: #ff3366;
+}
+
+.sidemenu .links .link-item a {
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+  display: block;
+  width: 100%;
+}
+
+.sidemenu .links .link-item a i {
+  margin-right: 5px;
+}
+
+.sidemenu .links .selected {
+  background: white;
+}
+
+.sidemenu .links .selected a {
+  color: #ff3366;
+}
+
+.container {
+  width: 100%;
+  padding: 15px;
+}
+
+.container .tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container .tabs .tab-link-outer {
+  display: inline-block;
+  color: #222;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.container .tabs .tab-link-outer.current {
+  background: #ededed;
+  color: #222;
+}
+
+.container .tab-link {
+  display: inline-block;
+  color: #222;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.container .tab-link.current {
+  background: #a5a4a4;
+  color: #222;
+}
+
+.container .tab-content {
+  display: none;
+}
+
+.container .tab-content {
+  background: #ededed;
+}
+
+.container .tab-content .not-selectable {
+  opacity: 0.5;
+}
+
+.container .tab-content.current {
+  background: white;
+  border: 1px solid #ededed;
+  padding: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-box-align: center;
+          align-items: center;
+  text-align: center;
+  justify-items: center;
+  display: grid;
+}
+
+.container .tab-content.current img {
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 48px;
+}
+
+.container .tab-content.current img:hover {
+  background: #cbcbcb;
+}
+
+.container .avatar-section-container {
+  display: -webkit-box;
+  display: flex;
+}
+
+.container .avatar-section-container .accesories-tabs-container {
+  -webkit-box-flex: 1;
+          flex: 1 1 50%;
+}
+
+.container .avatar-section-container .avatar-container {
+  -webkit-box-flex: 1;
+          flex: 1 1 50%;
+  position: relative;
+  height: 545px;
+}
+
+.container .avatar-section-container .avatar-container #avatar {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #222;
+  position: absolute;
+}
+
+.container .avatar-section-container .avatar-container .category-canvas {
+  position: absolute;
+  width: 100%;
+}
+

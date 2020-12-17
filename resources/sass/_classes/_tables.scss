@@ -1,0 +1,16 @@
+/***********************************************
+*               Estilos de tabla               *
+************************************************/
+
+.table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+
+    td,
+    th {
+        border-bottom: 1px solid;
+        padding: 15px;
+    }
+}

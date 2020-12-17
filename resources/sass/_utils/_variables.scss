@@ -1,0 +1,37 @@
+/***********************************************
+*               Variables globales             *
+************************************************/
+
+// Colores principales usados por la aplicación
+$colors : (
+    "primary" : #ff3366,
+    "secondary" : #2274a5,
+    "success" : #49bf00,
+    "danger" : #ff2e2e,
+    "warning" : #ffe100,
+    "info" : #4baea0,
+    "focus" : #9c33ff,
+    "lighter" : #fff,
+    "light" : #f8f9fa,
+    "gray" : #adb5bd,
+    "dark" : #343a40,
+    "black" : #000
+);
+
+// Variables para tamaño de fuente
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+
+$headings_size : (
+    "h1": $font-size-base * 2.5,
+    "h2": $font-size-base * 2,
+    "h3": $font-size-base * 1.75,
+    "h4": $font-size-base * 1.5,
+    "h5": $font-size-base * 1.25,
+    "h6": $font-size-base,
+);
+
+// Fuente utilizada a lo largo de todo el proyecto
+$font-family-default:         'Fredoka One';
+$font-family-weight:          lighter;

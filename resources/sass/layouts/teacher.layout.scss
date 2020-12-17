@@ -1,0 +1,87 @@
+@import "../_utils/_variables.scss";
+
+.menu {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 1px 1px 5px 3px #aaa;
+
+    .page-title {
+        flex: 1 1 auto;
+    }
+
+    .nav {
+        flex: 1 1 auto;
+        text-align: center;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        .nav-item {
+            margin-left: 20px;
+            text-decoration: none;
+            padding: 10px;
+            position: relative;
+
+            &:hover {
+                opacity: 1;
+                border-bottom: 2px solid;
+            }
+        }
+
+        .selected {
+            border-bottom: 2px solid;
+        }
+    }
+
+    .user-menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 1 1 auto;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .profile-img {
+            width: 48px;
+            border-radius: 50%;
+        }
+
+        .user-name {
+            position: relative;
+            cursor: pointer;
+
+            .dropdown {
+                display: none;
+                position: absolute;
+                border-radius: 8px;
+                box-shadow: 0px 2px 5px 3px map-get($colors, "dark");
+                list-style-type: none;
+                top: 10px;
+                right: 0;
+                padding: 0;
+                overflow: hidden;
+                background: white;
+
+                hr {
+                    margin: 0;
+                }
+
+                li {
+                    padding: 15px;
+
+                    &:hover {
+                        background: map-get($colors, "gray");
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content {
+    padding: 15px;
+}

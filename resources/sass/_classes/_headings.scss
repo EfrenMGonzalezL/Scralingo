@@ -1,0 +1,9 @@
+/***********************************************
+*               Tamaños de encabezado          *
+************************************************/
+
+@each $header, $value in $headings_size {
+    .#{$header} {
+        font-size: map-get($headings_size, $header);
+    }
+}

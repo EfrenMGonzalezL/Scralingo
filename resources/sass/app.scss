@@ -1,0 +1,31 @@
+/***********************************************
+*                    Fuentes                   *
+************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+/***********************************************
+*              Dependencias externas           *
+************************************************/
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+@import "_globals.scss";
+
+@import "_utils/_flex.scss";
+@import "_utils/_variables.scss";
+
+@import "_functions/_utils.scss";
+
+@import "_mixins/_buttons.scss";
+
+@import "_classes/_columns.scss";
+@import "_classes/_buttons.scss";
+@import "_classes/_text.scss";
+@import "_classes/_cards.scss";
+@import "_classes/_headings.scss";
+@import "_classes/_tables.scss";
+@import "_classes/_modal.scss";

@@ -1,0 +1,197 @@
+/***********************************************
+*       Estilos para layout de estudiante      *
+************************************************/
+
+@import "../_utils/_variables.scss";
+
+body {
+    display: flex;
+    overflow: hidden;
+}
+
+.sidemenu-wrap {
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+.sidemenu {
+    position: relative;
+    shape-outside: ellipse(250px 100% at 0 -20px);
+    clip-path: ellipse(250px 80% at -3px 214px);
+    left: 0;
+    top: 0;
+    background: map-get($colors, "primary");
+    width: 250px;
+    height: 100%;
+    box-shadow: 0px 0px 10px 5px #333;
+
+    .user-info {
+        position: relative;
+        width: 100%;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+
+        .user-profile-img {
+            border-radius: 50%;
+            width: 75%;
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+            justify-content: center;
+        }
+
+        .user-name {
+            grid-row: 1 / 2;
+        }
+
+        .user-level {
+            grid-row: 2 / 3;
+        }
+
+        .user-money {
+            grid-column: 1 / 3;
+        }
+
+        .user-xp {
+            grid-column: 1 / 3;
+        }
+    }
+
+    .links {
+        list-style-type: none;
+        padding: 0;
+
+        .link-item {
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: white;
+
+                a {
+                    color: map-get($colors, "primary");
+                }
+            }
+
+            a {
+                text-decoration: none;
+                padding: 15px;
+                color: white;
+                display: block;
+                width: 100%;
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .selected {
+            background: white;
+
+            a {
+                color: map-get($colors, "primary");
+            }
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    padding: 15px;
+
+    .tabs {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        .tab-link-outer {
+            display: inline-block;
+            color: #222;
+            padding: 10px 15px;
+            cursor: pointer;
+
+            &.current {
+                background: #ededed;
+                color: #222;
+            }
+        }
+    }
+
+    .tab-link {
+        display: inline-block;
+        color: #222;
+        padding: 15px;
+        cursor: pointer;
+
+        &.current {
+            background: #a5a4a4;
+            color: #222;
+        }
+    }
+
+    .tab-content {
+        display: none;
+    }
+
+    .tab-content {
+        background: #ededed;
+
+        .not-selectable {
+            opacity: 0.5;
+        }
+    }
+
+    .tab-content.current {
+        background: white;
+        border: 1px solid #ededed;
+        padding: 15px;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+        display: grid;
+
+        img {
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+            width: 48px;
+        }
+
+        img:hover {
+            background: #cbcbcb;
+        }
+    }
+
+    .avatar-section-container {
+        display: flex;
+
+        .accesories-tabs-container {
+            flex: 1 1 50%;
+        }
+
+        .avatar-container {
+            flex: 1 1 50%;
+            position: relative;
+            height: 545px;
+
+            #avatar {
+                width: 100%;
+                height: 100%;
+                border: 1px solid #222;
+                position: absolute;
+            }
+
+            .category-canvas {
+                position: absolute;
+                width: 100%;
+            }
+        }
+    }
+}

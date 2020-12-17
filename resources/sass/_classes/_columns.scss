@@ -1,0 +1,5 @@
+@for $col-size from 1 to 13 {
+    .col-#{$col-size} {
+        grid-template-columns: repeat(#{$col-size}, 1fr);
+    }
+}

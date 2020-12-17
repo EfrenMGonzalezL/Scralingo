@@ -1,0 +1,22 @@
+/***********************************************
+*               Colores de texto               *
+************************************************/
+
+.text {
+    font-family: $font-family-default;
+    font-weight: $font-family-weight;
+}
+
+@each $color, $value in $colors {
+    .text-#{$color} {
+        color: map-get($colors, $color);
+    }   
+}
+
+.text-sm {
+    font-size: $font-size-sm;
+}
+
+.text-lg {
+    font-size: $font-size-lg;
+}

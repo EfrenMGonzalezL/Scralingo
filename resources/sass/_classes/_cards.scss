@@ -1,0 +1,16 @@
+/***********************************************
+*              Estilos de tarjetas             *
+************************************************/
+
+.cards-container {
+    display: grid;
+    grid-auto-rows: minmax(200px, auto);
+}
+
+.card {
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 3px 5px 1px #888;
+    padding: 10px;
+    margin: 25px;
+}
